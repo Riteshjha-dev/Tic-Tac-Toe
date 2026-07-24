@@ -8,15 +8,15 @@ computer opponent hai.
 ## 📁 File structure
 ```
 tic-tac-toe/
-├── TicTacToe.html   # Structure / markup
-├── TicTacToe.css    # Chalkboard theme, animations, responsive layout
-└── TicTacToe.js     # Game logic, AI (minimax), sound, confetti, save/load
+├── index.html   # Structure / markup
+├── style.css    # Chalkboard theme, animations, responsive layout
+└── script.js     # Game logic, AI (minimax), sound, confetti, save/load
 ```
 Teeno file **same folder** me rakhna zaroori hai — HTML andar se CSS aur JS ko
-relative path (`TicTacToe.css`, `TicTacToe.js`) se load karta hai.
+relative path (`style.css`, `script.js`) se load karta hai.
 
 ## ▶️ Kaise chalayein
-`TicTacToe.html` ko double-click karo, seedha browser me khul jayega. Koi
+`index.html` ko double-click karo, seedha browser me khul jayega. Koi
 installation, server, ya internet zaroori nahi (Google Fonts ke alawa, jo
 optional hai — fonts na load ho to bhi game chalega, bas font fallback ho jayega).
 
@@ -46,12 +46,7 @@ optional hai — fonts na load ho to bhi game chalega, bas font fallback ho jaye
 - **Reset Match** — sab scores clear karke fresh start
 - 🔊/🔇 icon — sound on/off
 
-## 🎨 Customize karna ho to
-- Colors: `TicTacToe.css` ke top me `:root{ }` ke andar CSS variables hain
-  (`--chalk-coral`, `--chalk-teal`, `--chalk-yellow`, `--wood`, etc.) — inhe
-  badal ke poora theme change kar sakte ho
-- Fonts: HTML ke `<head>` me Google Fonts link hai (`Caveat`, `Space Grotesk`, `JetBrains Mono`)
-- AI difficulty logic: `TicTacToe.js` me `getCPUMove()` function
+---
 
 ## 🌐 Browser support
 Modern browsers (Chrome, Edge, Safari, Firefox) — desktop, mobile, tablet sab
@@ -76,9 +71,11 @@ git commit -m "Initial commit: Tic Tac Toe chalkboard edition"
 ### 3. Connect aur push
 ```bash
 git branch -M main
-git remote add origin https://github.com/<your-username>/tic-tac-toe.git
+git remote add origin https://github.com/<your-Riteshjha-dev>/tic-tac-toe.git
 git push -u origin main
 ```
+
+---
 
 ### 4. Future changes
 ```bash
@@ -87,13 +84,14 @@ git commit -m "describe your change here"
 git push
 ```
 
+---
+
 ### 5. Free hosting — GitHub Pages
 1. Repo → **Settings** → **Pages**
 2. Source: **Deploy from a branch** → Branch: `main`, folder: `/ (root)` → **Save**
-3. 1-2 min baad live: `https://<your-username>.github.io/tic-tac-toe/TicTacToe.html`
-
-   (Tip: agar chaho to `TicTacToe.html` ko `index.html` rename kar do taaki link
-   seedha `https://<your-username>.github.io/tic-tac-toe/` ho jaye)
+3. 1-2 min baad live: `https://<your-Riteshjha-dev>.github.io/tic-tac-toe/TicTacToe.html`
+   
+---
 
 ### 6. Alternative — Netlify / Vercel
 - Netlify: repo import karo, build command khaali chodo, publish directory `/`
